@@ -1,71 +1,68 @@
-books = []
+===== LIBRARY MANAGEMENT SYSTEM =====
+1. Add Book
+2. View Books
+3. Search Book
+4. Delete Book
+5. Exit
+Enter your choice (1-5): 1
+Enter book title: python programming
+Enter author name: Esther
+Book added successfully!
 
-while True:
-    print("\n===== LIBRARY MANAGEMENT SYSTEM =====")
-    print("1. Add Book")
-    print("2. View Books")
-    print("3. Search Book")
-    print("4. Delete Book")
-    print("5. Exit")
+===== LIBRARY MANAGEMENT SYSTEM =====
+1. Add Book
+2. View Books
+3. Search Book
+4. Delete Book
+5. Exit
+Enter your choice (1-5): 2
 
-    choice = input("Enter your choice (1-5): ")
+Books in the Library:
+Title: python programming
+Author: Esther
+----------------------
 
-    if choice == "1":
-        title = input("Enter book title: ")
-        author = input("Enter author name: ")
+===== LIBRARY MANAGEMENT SYSTEM =====
+1. Add Book
+2. View Books
+3. Search Book
+4. Delete Book
+5. Exit
+Enter your choice (1-5): 1
+Enter book title: python programming
+Enter author name: Joseph
+Book added successfully!
 
-        book = {
-            "title": title,
-            "author": author
-        }
+===== LIBRARY MANAGEMENT SYSTEM =====
+1. Add Book
+2. View Books
+3. Search Book
+4. Delete Book
+5. Exit
+Enter your choice (1-5): 3
+Enter book title to search: Python programming
 
-        books.append(book)
-        print("Book added successfully!")
+Book Found!
+Title: python programming
+Author: Esther
 
-    elif choice == "2":
-        if len(books) == 0:
-            print("No books found.")
-        else:
-            print("\nBooks in the Library:")
-            for book in books:
-                print("Title:", book["title"])
-                print("Author:", book["author"])
-                print("----------------------")
+===== LIBRARY MANAGEMENT SYSTEM =====
+1. Add Book
+2. View Books
+3. Search Book
+4. Delete Book
+5. Exit
+Enter your choice (1-5): 4
+Enter book title to delete: python programming
+Book deleted successfully!
 
-    elif choice == "3":
-        search = input("Enter book title to search: ")
+===== LIBRARY MANAGEMENT SYSTEM =====
+1. Add Book
+2. View Books
+3. Search Book
+4. Delete Book
+5. Exit
+Enter your choice (1-5): 5
+Thank you for using the Library Management System.
 
-        found = False
-
-        for book in books:
-            if book["title"].lower() == search.lower():
-                print("\nBook Found!")
-                print("Title:", book["title"])
-                print("Author:", book["author"])
-                found = True
-                break
-
-        if found == False:
-            print("Book not found.")
-
-    elif choice == "4":
-        delete = input("Enter book title to delete: ")
-
-        found = False
-
-        for book in books:
-            if book["title"].lower() == delete.lower():
-                books.remove(book)
-                print("Book deleted successfully!")
-                found = True
-                break
-
-        if found == False:
-            print("Book not found.")
-
-    elif choice == "5":
-        print("Thank you for using the Library Management System.")
-        break
-
-    else:
-        print("Invalid choice! Please enter a number from 1 to 5.")
+[Program finished]
