@@ -1,13 +1,36 @@
-===== LIBRARY MANAGEMENT SYSTEM =====
-1. Add Book
-2. View Books
-3. Search Book
-4. Delete Book
-5. Exit
-Enter your choice (1-5): 1
-Enter book title: python programming
-Enter author name: Esther
-Book added successfully!
+📚 Library Management System
+
+Overview
+
+This is a simple Library Management System built with Python. It is a beginner-friendly console application that allows users to manage a small collection of books.
+
+Features
+
+Add a new book
+
+View all books
+
+Search for a book by title
+
+Delete a book
+
+Exit the program
+
+Technologies Used
+
+Python 3
+
+How to Run
+
+Download or clone this repository.
+
+Open the Python file in Pydroid 3 or any Python IDE.
+
+Run the program.
+
+Follow the on-screen menu to manage books.
+
+Sample Menu
 
 ===== LIBRARY MANAGEMENT SYSTEM =====
 1. Add Book
@@ -15,54 +38,17 @@ Book added successfully!
 3. Search Book
 4. Delete Book
 5. Exit
-Enter your choice (1-5): 2
 
-Books in the Library:
-Title: python programming
-Author: Esther
-----------------------
+Author
 
-===== LIBRARY MANAGEMENT SYSTEM =====
-1. Add Book
-2. View Books
-3. Search Book
-4. Delete Book
-5. Exit
-Enter your choice (1-5): 1
-Enter book title: python programming
-Enter author name: Joseph
-Book added successfully!
+Esther Ubadimma
 
-===== LIBRARY MANAGEMENT SYSTEM =====
-1. Add Book
-2. View Books
-3. Search Book
-4. Delete Book
-5. Exit
-Enter your choice (1-5): 3
-Enter book title to search: Python programming
+Future Improvements
 
-Book Found!
-Title: python programming
-Author: Esther
+Save books to a file or database.
 
-===== LIBRARY MANAGEMENT SYSTEM =====
-1. Add Book
-2. View Books
-3. Search Book
-4. Delete Book
-5. Exit
-Enter your choice (1-5): 4
-Enter book title to delete: python programming
-Book deleted successfully!
+Edit book information.
 
-===== LIBRARY MANAGEMENT SYSTEM =====
-1. Add Book
-2. View Books
-3. Search Book
-4. Delete Book
-5. Exit
-Enter your choice (1-5): 5
-Thank you for using the Library Management System.
+Add book categories.
 
-[Program finished]
+Add a borrowing and return system.
