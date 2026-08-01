@@ -1,76 +1,26 @@
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 1
-Enter account holder's name: Paulinus
-Enter account number: 66019
-Enter opening balance: 5000
-Account created successfully!
-
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 2
-Enter account number: 66019
-Enter amount to deposit: 2000
-Deposit successful!
-New balance: 7000.0
-
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 3
-Enter account number: 66019
-Enter amount to withdraw: 3000
-Withdrawal successful!
-New balance: 4000.0
-
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 4
-Enter account number: 66019
-Current Balance: 4000.0
-
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 5
-Enter account number: 66019
-
-===== ACCOUNT DETAILS =====
-Account Holder: Paulinus
-Account Number: 66019
-Balance: 4000.0
-
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 6
-Thank you for using the Bank Account Management System.
-
-[Program finished]
+Bank Account Management System
+Project Description
+This is a simple Bank Account Management System developed in Python. It is a console-based application that allows users to perform basic banking operations through a menu-driven interface.
+Features
+Create a new bank account
+Deposit money
+Withdraw money
+Check account balance
+View account details
+Exit the program
+Technologies Used
+Python 3
+How to Run the Project
+Download or clone this repository.
+Open the project in a Python IDE such as Pydroid 3, VS Code, or IDLE.
+Run the Python file.
+Follow the on-screen menu to perform banking operations.
+Sample Menu
+Create Account
+Deposit Money
+Withdraw Money
+Check Balance
+View Account Details
+Exit
+Author
+Esther Ubadimma
