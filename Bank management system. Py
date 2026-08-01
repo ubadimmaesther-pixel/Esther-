@@ -1,76 +1,78 @@
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 1
-Enter account holder's name: Paulinus
-Enter account number: 66019
-Enter opening balance: 5000
-Account created successfully!
+account = {}
 
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 2
-Enter account number: 66019
-Enter amount to deposit: 2000
-Deposit successful!
-New balance: 7000.0
+while True:
+    print("\n===== BANK ACCOUNT MANAGEMENT SYSTEM =====")
+    print("1. Create Account")
+    print("2. Deposit Money")
+    print("3. Withdraw Money")
+    print("4. Check Balance")
+    print("5. View Account Details")
+    print("6. Exit")
 
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 3
-Enter account number: 66019
-Enter amount to withdraw: 3000
-Withdrawal successful!
-New balance: 4000.0
+    choice = input("Enter your choice (1-6): ")
 
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 4
-Enter account number: 66019
-Current Balance: 4000.0
+    if choice == "1":
+        name = input("Enter account holder's name: ")
+        account_number = input("Enter account number: ")
 
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 5
-Enter account number: 66019
+        if account_number in account:
+            print("Account already exists!")
+        else:
+            balance = float(input("Enter opening balance: "))
+            account[account_number] = {
+                "name": name,
+                "balance": balance
+            }
+            print("Account created successfully!")
 
-===== ACCOUNT DETAILS =====
-Account Holder: Paulinus
-Account Number: 66019
-Balance: 4000.0
+    elif choice == "2":
+        account_number = input("Enter account number: ")
 
-===== BANK ACCOUNT MANAGEMENT SYSTEM =====
-1. Create Account
-2. Deposit Money
-3. Withdraw Money
-4. Check Balance
-5. View Account Details
-6. Exit
-Enter your choice (1-6): 6
-Thank you for using the Bank Account Management System.
+        if account_number in account:
+            amount = float(input("Enter amount to deposit: "))
+            account[account_number]["balance"] += amount
+            print("Deposit successful!")
+            print("New balance:", account[account_number]["balance"])
+        else:
+            print("Account not found!")
 
-[Program finished]
+    elif choice == "3":
+        account_number = input("Enter account number: ")
+
+        if account_number in account:
+            amount = float(input("Enter amount to withdraw: "))
+
+            if amount <= account[account_number]["balance"]:
+                account[account_number]["balance"] -= amount
+                print("Withdrawal successful!")
+                print("New balance:", account[account_number]["balance"])
+            else:
+                print("Insufficient balance!")
+        else:
+            print("Account not found!")
+
+    elif choice == "4":
+        account_number = input("Enter account number: ")
+
+        if account_number in account:
+            print("Current Balance:", account[account_number]["balance"])
+        else:
+            print("Account not found!")
+
+    elif choice == "5":
+        account_number = input("Enter account number: ")
+
+        if account_number in account:
+            print("\n===== ACCOUNT DETAILS =====")
+            print("Account Holder:", account[account_number]["name"])
+            print("Account Number:", account_number)
+            print("Balance:", account[account_number]["balance"])
+        else:
+            print("Account not found!")
+
+    elif choice == "6":
+        print("Thank you for using the Bank Account Management System.")
+        break
+
+    else:
+        print("Invalid choice! Please enter a number between 1 and 6.")
